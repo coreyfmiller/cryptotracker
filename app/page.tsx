@@ -35,8 +35,19 @@ export default function Page() {
 
   // Initial data load
   useEffect(() => {
-    setAssets(getMockCryptoData())
-    setMarketStats(getMockMarketStats())
+    async function loadData() {
+      try {
+        const [cryptoData, marketData] = await Promise.all([
+          getMockCryptoData(),
+          getMockMarketStats(),
+        ])
+        setAssets(cryptoData)
+        setMarketStats(marketData)
+      } catch (error) {
+        console.error("Error loading initial data:", error)
+      }
+    }
+    loadData()
   }, [])
 
   // Simulate live price updates
