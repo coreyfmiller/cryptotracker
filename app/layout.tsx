@@ -8,7 +8,7 @@ const _inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const _jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-jetbrains-mono' })
 
 export const metadata: Metadata = {
-  title: 'CryptoTracker | Real-Time Market Dashboard',
+  title: 'CryptoTracker5000 | Real-Time Market Dashboard',
   description: 'Professional crypto tracker with live market data, sparklines, and portfolio tracking.',
 }
 
