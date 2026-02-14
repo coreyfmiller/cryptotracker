@@ -110,10 +110,10 @@ export default function Page() {
       <header className="sticky top-0 z-40 bg-background/70 backdrop-blur-2xl">
         <div className="px-6 lg:px-8 py-5 lg:py-6">
           <h1 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
-            CryptoTracker<span className="text-[hsl(var(--crypto-up))]">5000</span>
+            Crypto Tracker <span className="text-[hsl(var(--crypto-up))]">500</span>
           </h1>
           <p className="text-sm text-muted-foreground mt-0.5">
-            {"- Real-Time Market Dashboard"}
+            Real time tracking of the top 500 Crypto Coins
           </p>
         </div>
         {/* Neon green glow border */}
